@@ -11,14 +11,14 @@ public class Main {
 		list.add(new RectTriangle(6, 2));
 
 		for (Shape shape : list) {
-			System.out.println("area:" + shape.getArea());
-			System.out.println("perimeter:" + shape.getPerimeter());
+			System.out.println("area:" + shape.getArea()); // 넓이
+			System.out.println("perimeter:" + shape.getPerimeter()); // 둘레
 
 			if (shape instanceof Resizable) {
 				Resizable resizable = (Resizable) shape;
 				resizable.resize(0.5);
-				System.out.println("new area:" + shape.getArea());
-				System.out.println("new perimeter:" + shape.getPerimeter());
+				System.out.println("new area:" + shape.getArea()); // 둘레 
+				System.out.println("new perimeter:" + shape.getPerimeter()); //넓이
 			}
 		}
 	}
